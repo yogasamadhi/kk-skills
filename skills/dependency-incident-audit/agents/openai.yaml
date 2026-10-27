@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Incident Audit"
+  short_description: "Map advisories to repository dependency evidence"
+  default_prompt: "Use $dependency-incident-audit to determine whether this advisory affects the current repository and show the evidence chain."

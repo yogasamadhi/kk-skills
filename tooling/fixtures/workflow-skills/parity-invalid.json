@@ -1,0 +1,20 @@
+{
+  "migration": "Broken fixture migration",
+  "cutoverRequested": true,
+  "rollback": {
+    "documented": false,
+    "evidence": []
+  },
+  "items": [
+    {
+      "id": "API-01",
+      "domain": "api",
+      "capability": "Write the fixture",
+      "required": true,
+      "status": "missing",
+      "legacyEvidence": ["design.md"],
+      "newEvidence": [],
+      "testEvidence": []
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Desktop Release Matrix"
+  short_description: "Verify desktop artifacts by platform and architecture"
+  default_prompt: "Use $desktop-release-matrix to verify these macOS and Windows desktop artifacts without publishing them."

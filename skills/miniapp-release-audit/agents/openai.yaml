@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mini-App Release Audit"
+  short_description: "Review WeChat, Taro, and uni-app releases"
+  default_prompt: "Use $miniapp-release-audit to review this mini-app project before submission without uploading it."

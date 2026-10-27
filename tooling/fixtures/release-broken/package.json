@@ -1,0 +1,6 @@
+{
+  "name": "release-broken-fixture",
+  "version": "1.0.0",
+  "main": "dist/missing.js",
+  "license": "MIT"
+}

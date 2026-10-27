@@ -1,0 +1,12 @@
+{
+  "engine": "contradictory-provider",
+  "observations": [
+    { "layer": "process", "status": "fail", "evidence": "No process is running" },
+    { "layer": "transport", "status": "unknown" },
+    { "layer": "authentication", "status": "pass", "evidence": "Sanitized authentication evidence" },
+    { "layer": "models", "status": "pass", "evidence": "Model list returned" },
+    { "layer": "inference", "status": "pass", "evidence": "Inference allegedly passed" },
+    { "layer": "state", "status": "pass", "evidence": "State says available" },
+    { "layer": "ui", "status": "pass", "evidence": "UI says available" }
+  ]
+}

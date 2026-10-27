@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runtime Compatibility Probe"
+  short_description: "Assess Node, Bun, Deno, browser, and Edge risk"
+  default_prompt: "Use $runtime-compatibility-probe to build a compatibility matrix for this TypeScript package and separate static findings from executed tests."

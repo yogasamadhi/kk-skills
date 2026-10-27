@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Doctor"
+  short_description: "Audit Skill structure, safety, and portability"
+  default_prompt: "Use $skill-doctor to audit this Skill package and report blocking defects separately from risks."

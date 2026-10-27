@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Runtime Diagnostics"
+  short_description: "Trace engine health through inference and UI state"
+  default_prompt: "Use $agent-runtime-diagnostics to explain why this Agent engine is running but still shown as unavailable."

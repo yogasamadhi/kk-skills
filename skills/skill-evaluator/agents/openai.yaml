@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Evaluator"
+  short_description: "Design and score behavioral Skill evaluations"
+  default_prompt: "Use $skill-evaluator to build realistic activation and behavior tests for this Skill."

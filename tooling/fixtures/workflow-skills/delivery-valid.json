@@ -1,0 +1,15 @@
+{
+  "title": "Fixture delivery",
+  "targetStatus": "verified",
+  "declaredComplete": true,
+  "items": [
+    {
+      "id": "DEL-01",
+      "title": "Verify the capability",
+      "status": "verified",
+      "acceptance": ["The capability is observable"],
+      "evidence": ["source.ts", "test.ts"],
+      "commands": ["pnpm test"]
+    }
+  ]
+}

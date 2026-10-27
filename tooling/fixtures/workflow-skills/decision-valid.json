@@ -1,0 +1,33 @@
+{
+  "decision": "Choose a fixture transport",
+  "constraints": [
+    { "id": "C1", "statement": "Runs locally", "hard": true }
+  ],
+  "criteria": [
+    { "id": "operations", "label": "Operational simplicity", "weight": 60 },
+    { "id": "migration", "label": "Migration cost", "weight": 40 }
+  ],
+  "options": [
+    {
+      "id": "alpha",
+      "label": "Alpha",
+      "scores": { "operations": 5, "migration": 4 },
+      "hardConstraintViolations": [],
+      "risks": ["Limited team experience"],
+      "reversibility": "high"
+    },
+    {
+      "id": "beta",
+      "label": "Beta",
+      "scores": { "operations": 3, "migration": 5 },
+      "hardConstraintViolations": [],
+      "risks": ["Higher operating cost"],
+      "reversibility": "medium"
+    }
+  ],
+  "sources": [
+    { "title": "Official fixture documentation", "url": "https://example.com", "checkedAt": "2026-08-22", "authoritative": true }
+  ],
+  "recommendation": "alpha",
+  "rationale": "Alpha has the highest eligible weighted score"
+}

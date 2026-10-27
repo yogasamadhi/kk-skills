@@ -1,0 +1,17 @@
+{
+  "claims": [
+    {
+      "id": "ARCH-01",
+      "statement": "A missing capability is fully implemented",
+      "status": "implemented",
+      "design": ["missing-design.md"],
+      "implementation": [],
+      "tests": []
+    },
+    {
+      "id": "ARCH-02",
+      "statement": "Two protocols disagree",
+      "status": "conflict"
+    }
+  ]
+}

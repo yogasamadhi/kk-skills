@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Engineering Loop"
+  short_description: "Close product, implementation, and verification loops"
+  default_prompt: "Use $product-engineering-loop to improve this workflow through one bounded, implemented, and visually verified iteration."

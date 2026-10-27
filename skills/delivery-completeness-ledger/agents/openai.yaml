@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delivery Completeness Ledger"
+  short_description: "Prove plan completion at explicit readiness levels"
+  default_prompt: "Use $delivery-completeness-ledger to turn this multi-phase plan into an evidence-backed completion ledger."

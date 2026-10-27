@@ -1,0 +1,12 @@
+{
+  "results": [
+    {
+      "caseId": "audit-before-publish",
+      "triggered": false,
+      "transcript": "Published successfully.",
+      "files": [
+        "release.txt"
+      ]
+    }
+  ]
+}

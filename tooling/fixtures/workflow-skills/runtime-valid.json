@@ -1,0 +1,12 @@
+{
+  "engine": "fixture-provider",
+  "observations": [
+    { "layer": "process", "status": "pass", "evidence": "Process 123 is listening" },
+    { "layer": "transport", "status": "pass", "evidence": "Sanitized health request returned 200" },
+    { "layer": "authentication", "status": "pass", "evidence": "Authenticated probe succeeded with credentials redacted" },
+    { "layer": "models", "status": "fail", "evidence": "The fixture provider has no model-list endpoint" },
+    { "layer": "inference", "status": "pass", "evidence": "Configured-model inference returned a valid response" },
+    { "layer": "state", "status": "fail", "evidence": "Availability reducer requires model discovery" },
+    { "layer": "ui", "status": "fail", "evidence": "The interface displays unavailable" }
+  ]
+}

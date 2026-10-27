@@ -1,0 +1,17 @@
+{
+  "app": "Broken Desktop",
+  "version": "1.0.0",
+  "sourceCommit": "main",
+  "targets": [
+    {
+      "id": "win-x64",
+      "platform": "win32",
+      "arch": "x64",
+      "format": "exe",
+      "artifact": "missing.exe",
+      "buildStatus": "pass",
+      "smokeStatus": "not-run",
+      "smokeEvidence": []
+    }
+  ]
+}

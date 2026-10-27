@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Implementation Audit"
+  short_description: "Trace architecture claims to code and test evidence"
+  default_prompt: "Use $architecture-implementation-audit to compare this design with the current implementation and classify every material claim."

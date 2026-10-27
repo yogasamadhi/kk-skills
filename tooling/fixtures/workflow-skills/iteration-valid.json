@@ -1,0 +1,20 @@
+{
+  "product": "Fixture product",
+  "iterations": [
+    {
+      "id": "ITER-01",
+      "status": "verified",
+      "user": "Fixture user",
+      "problem": "The primary action is difficult to find",
+      "hypothesis": "A persistent action makes the workflow discoverable",
+      "scope": ["Expose the primary action"],
+      "acceptance": ["The user can complete the primary workflow"],
+      "changes": ["source.ts"],
+      "behaviorEvidence": ["behavior.txt"],
+      "visualEvidence": ["visual.png"],
+      "commands": ["pnpm test"],
+      "learning": "The action is now visible in context",
+      "nextDecision": "Check the narrow viewport"
+    }
+  ]
+}

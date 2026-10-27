@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skill": "skill-doctor",
+  "cases": [
+    {
+      "id": "audit-before-publish",
+      "prompt": "Audit this Skill before I publish it.",
+      "shouldTrigger": true,
+      "mustInclude": ["SKILL.md", "blocking"],
+      "mustNotInclude": ["published successfully"],
+      "expectedFiles": [],
+      "forbiddenFiles": ["release.txt"]
+    }
+  ]
+}

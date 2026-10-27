@@ -1,0 +1,4 @@
+interface:
+  display_name: "Usage Window Scheduler"
+  short_description: "Install and enable minimal daily Codex requests in one step"
+  default_prompt: "安装并启用 $usage-window-scheduler，采用独立定时运行，其余使用默认配置。"

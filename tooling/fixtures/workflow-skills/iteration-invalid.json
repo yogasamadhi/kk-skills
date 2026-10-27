@@ -1,0 +1,17 @@
+{
+  "product": "Broken fixture product",
+  "iterations": [
+    {
+      "id": "ITER-01",
+      "status": "verified",
+      "problem": "The workflow is unclear",
+      "hypothesis": "A change might help",
+      "scope": ["Change the workflow"],
+      "acceptance": ["The workflow improves"],
+      "changes": [],
+      "behaviorEvidence": [],
+      "visualEvidence": [],
+      "commands": []
+    }
+  ]
+}

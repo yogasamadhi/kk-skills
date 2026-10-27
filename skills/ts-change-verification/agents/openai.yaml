@@ -1,0 +1,4 @@
+interface:
+  display_name: "TS Change Verification"
+  short_description: "Plan affected TypeScript checks and evidence"
+  default_prompt: "Use $ts-change-verification to verify the current TypeScript changes and report the commands actually run."

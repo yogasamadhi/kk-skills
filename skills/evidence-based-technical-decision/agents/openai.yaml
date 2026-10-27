@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence-Based Technical Decision"
+  short_description: "Score technical options against project constraints"
+  default_prompt: "Use $evidence-based-technical-decision to compare these options using repository facts, current sources, and explicit tradeoffs."

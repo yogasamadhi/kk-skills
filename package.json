@@ -1,0 +1,20 @@
+{
+  "name": "kk-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "skill:validate": "node --experimental-strip-types tooling/validate-skills.ts",
+    "test:smoke": "node --experimental-strip-types tooling/smoke-test.ts",
+    "check": "pnpm run typecheck && pnpm run skill:validate"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "app": "Fixture Desktop",
+  "version": "1.0.0",
+  "sourceCommit": "0123456789abcdef0123456789abcdef01234567",
+  "toolchain": { "node": "22.14.0", "bun": "1.3.0" },
+  "vendors": { "fixture-engine": "abcdef0123456789abcdef0123456789abcdef01" },
+  "targets": [
+    {
+      "id": "mac-arm64",
+      "platform": "darwin",
+      "arch": "arm64",
+      "format": "dmg",
+      "artifact": "app.dmg",
+      "buildStatus": "pass",
+      "smokeStatus": "pass",
+      "smokeEvidence": ["smoke.txt"]
+    }
+  ]
+}

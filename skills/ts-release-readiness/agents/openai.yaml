@@ -1,0 +1,4 @@
+interface:
+  display_name: "TS Release Readiness"
+  short_description: "Check npm package release blockers and evidence"
+  default_prompt: "Use $ts-release-readiness to review this TypeScript package before release without publishing anything."

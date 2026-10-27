@@ -1,0 +1,3 @@
+[submodule "missing-vendor"]
+  path = vendor/missing
+  url = https://example.com/missing.git

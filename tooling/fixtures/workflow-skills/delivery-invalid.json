@@ -1,0 +1,15 @@
+{
+  "title": "Incomplete fixture delivery",
+  "targetStatus": "verified",
+  "declaredComplete": true,
+  "items": [
+    {
+      "id": "DEL-01",
+      "title": "Unverified capability",
+      "status": "implemented",
+      "acceptance": ["The capability is verified"],
+      "evidence": ["missing.ts"],
+      "commands": []
+    }
+  ]
+}

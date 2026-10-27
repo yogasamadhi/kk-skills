@@ -1,0 +1,20 @@
+{
+  "migration": "Fixture legacy migration",
+  "cutoverRequested": true,
+  "rollback": {
+    "documented": true,
+    "evidence": ["rollback.md"]
+  },
+  "items": [
+    {
+      "id": "API-01",
+      "domain": "api",
+      "capability": "Read the fixture",
+      "required": true,
+      "status": "matched",
+      "legacyEvidence": ["design.md"],
+      "newEvidence": ["source.ts"],
+      "testEvidence": ["test.ts"]
+    }
+  ]
+}

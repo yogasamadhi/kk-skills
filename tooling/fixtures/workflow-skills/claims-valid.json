@@ -1,0 +1,14 @@
+{
+  "claims": [
+    {
+      "id": "ARCH-01",
+      "statement": "Credentials remain in the main process",
+      "status": "implemented",
+      "design": ["design.md"],
+      "implementation": ["source.ts"],
+      "configuration": [],
+      "tests": ["test.ts"],
+      "governingSource": "design.md"
+    }
+  ]
+}

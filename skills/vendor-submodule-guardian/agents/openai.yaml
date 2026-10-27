@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vendor Submodule Guardian"
+  short_description: "Verify submodule pins, paths, and read-only state"
+  default_prompt: "Use $vendor-submodule-guardian to inspect these submodules and prove their pinned and working-tree state before any update."

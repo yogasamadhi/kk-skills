@@ -1,0 +1,1 @@
+The packaged application launched and displayed its main window.

@@ -1,0 +1,23 @@
+{
+  "decision": "Broken fixture decision",
+  "constraints": [
+    { "id": "C1", "statement": "Runs locally", "hard": true }
+  ],
+  "criteria": [
+    { "id": "operations", "label": "Operational simplicity", "weight": 80 },
+    { "id": "migration", "label": "Migration cost", "weight": 80 }
+  ],
+  "options": [
+    {
+      "id": "alpha",
+      "label": "Alpha",
+      "scores": { "operations": 8 },
+      "hardConstraintViolations": ["C1"],
+      "risks": [],
+      "reversibility": ""
+    }
+  ],
+  "sources": [],
+  "recommendation": "alpha",
+  "rationale": ""
+}

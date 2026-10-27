@@ -1,0 +1,4 @@
+interface:
+  display_name: "Migration Parity Keeper"
+  short_description: "Track old-to-new behavior and cutover readiness"
+  default_prompt: "Use $migration-parity-keeper to inventory legacy behavior and prove the new implementation is ready for cutover."

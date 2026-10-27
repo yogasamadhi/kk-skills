@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "caseId": "audit-before-publish",
+      "triggered": true,
+      "transcript": "Inspected SKILL.md and separated the blocking findings from warnings.",
+      "files": []
+    }
+  ]
+}

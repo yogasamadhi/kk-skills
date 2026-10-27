@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs–Code Sync"
+  short_description: "Detect TypeScript code and documentation drift"
+  default_prompt: "Use $docs-code-sync to find documentation that no longer matches this TypeScript repository."
