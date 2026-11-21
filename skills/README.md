@@ -20,4 +20,5 @@
 | [desktop-release-matrix](desktop-release-matrix/) | 按平台和架构验证桌面安装包、校验和与冒烟证据 |
 | [evidence-based-technical-decision](evidence-based-technical-decision/) | 使用项目约束、权重、官方证据与可逆性比较技术方案 |
 | [product-engineering-loop](product-engineering-loop/) | 闭环执行产品诊断、实现、行为与视觉验证 |
+| [supertools-project-lifecycle](supertools-project-lifecycle/) | 按目标项目的工具与渠道完成建项、验收、发布及恢复，适用于服务、软件包与离线交付 |
 | [usage-window-scheduler](usage-window-scheduler/) | 使用经济型模型在固定时间发送最小 Codex 请求，尝试启动订阅额度窗口。[安装与配置](../docs/usage-window-scheduler.md) |

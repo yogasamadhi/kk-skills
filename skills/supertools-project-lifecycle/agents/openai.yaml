@@ -1,0 +1,4 @@
+interface:
+  display_name: "Supertools 项目交付"
+  short_description: "沿用项目工具完成建项、验收、发布和恢复，支持服务、软件包与离线交付"
+  default_prompt: "用 $supertools-project-lifecycle 查看这个项目做到哪一步，说明最近一次验收结果和下一步。"

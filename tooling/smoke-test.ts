@@ -11,6 +11,7 @@ interface SmokeCase {
 
 const root = process.cwd();
 const cases: SmokeCase[] = [
+  { name: "supertools-project-lifecycle", script: "tooling/test-supertools-project-lifecycle.ts", args: [] },
   { name: "usage-window-scheduler", script: "tooling/test-usage-window-scheduler.ts", args: [] },
   { name: "skill-doctor", script: "skills/skill-doctor/scripts/doctor.ts", args: ["skills", "--json"] },
   { name: "skill-evaluator", script: "skills/skill-evaluator/scripts/evaluate.ts", args: ["--cases", "tooling/fixtures/evaluator-cases.json", "--results", "tooling/fixtures/evaluator-results.json", "--json"] },

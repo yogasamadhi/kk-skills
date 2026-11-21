@@ -3,6 +3,7 @@
 - Add first-party distributable skills directly under `skills/<skill-name>/` and list them in `skills/README.md`.
 - List collected open-source skills in `community-skills/README.md` with their purpose, upstream source, and license.
 - Keep every skill self-contained; do not import files from sibling skills.
+- For reusable workflows, discover commands, delivery targets and evidence from the user's project. Keep organization-specific rules in their owning project. Identify prerequisites of product-specific skills and optional integrations at their point of use.
 - Use TypeScript for deterministic helpers. Do not add Python helpers.
 - Keep shared repository tooling under `tooling/`; it is not part of a published skill.
 - Add optional directories only when they contain resources used by the skill.

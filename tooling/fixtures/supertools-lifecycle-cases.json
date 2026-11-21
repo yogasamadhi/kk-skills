@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "skill": "supertools-project-lifecycle",
+  "cases": [
+    {
+      "id": "desktop-cutover",
+      "prompt": "本轮只读交接。摘要 A（10-28）称桌面架构迁移仍排队。ADR-31（11-10）含主线切换及工程验收通过回执。本机仅验过未公证的开发包，发行清单没有公开包。分别判断工程迁移和公开发行，给出证据和下一步。以 migration=complete 或 migration=pending，以及 public=available 或 public=unverified 标记两项。",
+      "shouldTrigger": true,
+      "mustInclude": [
+        "migration=complete",
+        "public=unverified",
+        "ADR-31"
+      ],
+      "mustNotInclude": [
+        "public=available",
+        "migration=pending"
+      ]
+    },
+    {
+      "id": "channel-release",
+      "prompt": "商城网页有 R17 的公开浏览回执。移动小程序有生产构建 M8、分包检查通过和正式 AppID，微信端记录只到待提审。能否向用户宣布两端都已经正式发行？按 web=live 或 web=pending、mini=live 或 mini=pending 作答，说明依据和下一步。",
+      "shouldTrigger": true,
+      "mustInclude": [
+        "web=live",
+        "mini=pending",
+        "M8"
+      ],
+      "mustNotInclude": [
+        "mini=live"
+      ]
+    },
+    {
+      "id": "partial-regression",
+      "prompt": "在开发环境回归 K4 中 9 个工作负载就绪，权限和引用撤回通过。AC-12 用无关问题检索，期望 0 项却返回 6 项；此后的用例分开执行通过。能否签收整套检索回归？给出 suite=pass 或 suite=fail、该从哪条用例接续及输入预期。",
+      "shouldTrigger": true,
+      "mustInclude": [
+        "suite=fail",
+        "AC-12",
+        "6",
+        "0"
+      ],
+      "mustNotInclude": [
+        "suite=pass"
+      ]
+    },
+    {
+      "id": "active-pipeline",
+      "prompt": "仓库留有 pipeline-84 成功回执，旧流水线文件仍存在。较新的 ops-15 接管手册写明 CI 已停用，Reporting 改为按服务直发；同日 deploy-15 回执记录该服务按摘要更新。现在准备发布 Reporting，给出 route=legacy-ci 或 route=service-direct、需要核对的目标和回退证据。仅做准备。",
+      "shouldTrigger": true,
+      "mustInclude": [
+        "route=service-direct",
+        "deploy-15",
+        "Reporting"
+      ],
+      "mustNotInclude": [
+        "route=legacy-ci"
+      ]
+    },
+    {
+      "id": "offline-wheel",
+      "prompt": "Please sign off our offline Python library delivery using the attached receipts. We use numbered paper records. Receipt WH-23 lists Calico 1.7 in the internal wheelhouse. On the disconnected recipient machine, RC-24 records 1.7 installed solely from WH-23 into an empty venv and calico.total([2, 3]) returning the required 5. That is the sole acceptance criterion. Summarize the delivery evidence in English. Include result=accepted or result=pending and cite both records.",
+      "shouldTrigger": true,
+      "mustInclude": ["result=accepted", "WH-23", "RC-24"],
+      "mustNotInclude": ["result=pending", "tcb hosting deploy", "pnpm install"]
+    },
+    {
+      "id": "manual-windows-recovery",
+      "prompt": "This is a read-only recovery handoff for one offline Windows workstation named Bench-A. Support ticket T-52 is the team record. The operator recorded v4.2 installed and the export failure. For v4.1 the ticket includes a successful export on Bench-A, the retained signed MSI and its SHA-256. A second workstation is in use. Outline the next operator steps, including a way to check the MSI using built-in PowerShell, the exact scope and what to record. Use recovery=planned or recovery=verified to summarize current status.",
+      "shouldTrigger": true,
+      "mustInclude": ["recovery=planned", "Bench-A", "Get-FileHash", "T-52"],
+      "mustNotInclude": ["recovery=verified", "node --experimental-strip-types", "tcb hosting deploy"]
+    },
+    {
+      "id": "static-pages-preflight",
+      "prompt": "只做发布准备。我们的静态手册通过 GitLab Pages 发行，当前维护说明 P-7 与最近一次发布回执均指向作业 pages-docs。该手动作业一旦触发就同时构建和发布。本次候选为 D91，本地检查通过，接收方版本尚未核对。给出适用的发布入口、本次应停在哪里以及实际发布后的复验。用 action=prepared 或 action=deployed 标明本次动作。",
+      "shouldTrigger": true,
+      "mustInclude": ["action=prepared", "pages-docs", "D91"],
+      "mustNotInclude": ["action=deployed", "tcb hosting deploy"]
+    },
+    {
+      "id": "local-first-project",
+      "prompt": "我想从零做一个供自己使用的本地记账工具。本机已有 Python 标准库，习惯在终端工作，输入两笔金额 12 和 8 应当汇总成 20。今天只要你给出第一版建项方案和一条可以手动验的用例。记录我自己放在纸质笔记 N-1。给出 scope=local 或 scope=hosted，并说明第一步。",
+      "shouldTrigger": true,
+      "mustInclude": ["scope=local", "12", "20", "N-1"],
+      "mustNotInclude": ["scope=hosted", "pnpm install", "tcb hosting deploy"]
+    }
+  ]
+}
